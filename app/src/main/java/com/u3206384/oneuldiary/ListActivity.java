@@ -32,7 +32,7 @@ public class ListActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         DiaryContent dcontent = contents.get(position);
-                        Intent intent = new Intent(view.getContext(), DiaryContent.class);
+                        Intent intent = new Intent(view.getContext(), DiaryActivity.class);
                         intent.putExtra("title", dcontent.getTitle());
                         intent.putExtra("content", dcontent.getContent());
                         intent.putExtra("date", dcontent.getDate());
