@@ -23,7 +23,7 @@ public class ListActivity extends AppCompatActivity {
 
         contents.add(new DiaryContent(LocalDate.of(2020,9,15), "Create", "Text"));
 
-        ArrayAdapter<DiaryContent> adapter = new ArrayAdapter<DiaryContent>(this, android.R.layout.simple_list_item_1, contents);
+        DiaryContentAdapter adapter = new DiaryContentAdapter(this, R.layout.list_item, contents);
         ListView listView = findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
