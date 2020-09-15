@@ -18,11 +18,11 @@ public class DiaryContent {
         return this.title;
     }
 
-    public String content(){
+    public String getContent(){
         return this.content;
     }
 
-    public String getDateString(){
+    public String getDate(){
         return this.date.format(DateTimeFormatter.ISO_LOCAL_DATE);
     }
 
