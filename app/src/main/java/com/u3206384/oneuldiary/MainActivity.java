@@ -1,14 +1,11 @@
 package com.u3206384.oneuldiary;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +32,5 @@ public class MainActivity extends AppCompatActivity {
         dbRef.child(key).child("title").setValue(content.getTitle());
         dbRef.child(key).child("content").setValue(content.getContent());
         dbRef.child(key).child("date").setValue(content.getDate());
-
-
     }
 }
